@@ -6,14 +6,52 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Pod request access landing page</title>
+  <title>Pod Request Access Landing Page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
+  <div class="container">
+    <header role="banner">
+      <div class="logo-box">
+        <img src="/assets/desktop/logo.svg" alt="logo">
+        <h1>pod</h1>
+      </div>
+    </header>
+    <main class="main-container" role="main">
+      <section class="context-box">
+        <h2 class="main-header">
+          PUBLISH YOUR PODCAST
+        </h2>
+        <h2 class="main-header">
+          EVERYWHERE.
+        </h2>
+    
+        <p class="main-text">
+          Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!
+        </p>
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+        <form action="submit">
+          <input type="email" name="email" id="email">
+          <label for="email"></label>
+          <button class="btn">Request access</button>
+        </form>
 
-  Request access
+        <div class="img-box">
+          <img src="./assets/desktop/spotify.svg" alt="Spotify">
+          <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast">
+          <img src="./assets/desktop/google-podcasts.svg" alt="Google podcast">
+          <img src="./assets/desktop/pocket-casts.svg" alt="Pocket podcast">
+        </div>
+      </section>
+    </main>
+
+    <div class="background-img"></div>
+
+    <div class="dots-wrapper">
+        <div class="dot"></div>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
