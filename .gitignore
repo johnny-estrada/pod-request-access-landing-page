@@ -29,6 +29,6 @@ $RECYCLE.BIN/
 
 # Main files
 /[Dd]esign/
-/[Nn]one_modules
+/[Nn]one_modules/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows
