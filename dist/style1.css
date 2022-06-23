@@ -4,7 +4,8 @@
     --text-color: hsl(225, 40%, 83%);
     --input-color: hsla(224, 26%, 23%, 1);
     --primary-color: hsla(157, 74%, 61%, 1);
-    --font-weight: 300;
+    --light-font: 300;
+    --bold-font: bold;
 }    
 
 *,
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Chino", sans-serif;
+  font-family: "Chivo", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -31,7 +32,7 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: var(--light-font);
   line-height: 1.1;
   margin-top: 0;
 }
@@ -51,26 +52,28 @@ a:active {
     width: 100%;
     background: linear-gradient(
         45deg,
-        rgba(18 23 37 / 100%),
+        rgba(18 23 37 / 95%),
         rgba(18 23 37 / 95%),
         rgba(18 23 37 / 95%), 
         rgba(18 23 37 / 95%),
         rgba(18 23 37 / 95%), 
-        rgba(18 23 37 / 100%)), 
+        rgba(18 23 37 / 95%)), 
         url(/assets/mobile/image-host.jpg);
-    background-size: cover;
+    background-size: 375px;
     background-repeat: no-repeat;
         
     width: 375px;
     height: 667px;
 }
 
-header h1 {
+.logo-box {
     display: flex;
     justify-content: center;
-    margin: 62px 0;
 }
 
+.logo-box img {
+    margin: 62px 0;
+}
 .content-box {
     display: flex;
     flex-direction: column;
@@ -79,23 +82,22 @@ header h1 {
 
 .main-header-green {
     color: var(--primary-color);
-    font-weight: var(--font-weight);
+    font-weight: var(--light-font);
     font-size: 26px;
     margin-bottom: 10px;
 }
 
 .main-header-white {
     color: var(--heading-color);
-    font-weight: var(--font-weight);
+    font-weight: var(--light-font);
     font-size: 26px;
-    font-style: normal;
 }
 
 .main-text {
     color: var(--text-color);
     margin: 0 auto;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: var(--light-font);
     line-height: 25px;
     text-align: center;
     margin: 0 24px 33px 24px;
@@ -134,7 +136,8 @@ input {
     cursor: pointer;
     padding-left: 32px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: var(--bold-font);
+    
 
 }
 
@@ -146,6 +149,6 @@ input {
     border-style: none;
     cursor: pointer;
 
-    font-weight: bold;
+    font-weight: var(--bold-font);
     font-size: 14px;
 }
