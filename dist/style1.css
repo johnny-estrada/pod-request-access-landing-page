@@ -66,18 +66,43 @@ a:active {
     height: 667px;
 }
 
+@media (min-width:768px) {
+    .container {
+        background-size: cover;
+            
+        width: 768px;
+        height: 1024px;
+    }
+}
+
 .logo-box {
     display: flex;
     justify-content: center;
 }
 
+@media (min-width: 768px) {
+    .logo-box {
+        justify-content: left;
+        margin-left: 39px;
+    }
+}
+
 .logo-box img {
     margin: 62px 0;
 }
+
 .content-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    .content-box {
+        width: 635px;
+        height: 509px;
+        outline: white solid 2px;
+    }
 }
 
 .main-header-green {
@@ -93,9 +118,25 @@ a:active {
     font-size: 26px;
 }
 
+@media (min-width:768px) {
+    .content-box {
+        align-items:flex-start;
+        margin-left: 39px;
+    }
+
+    .main-header-green {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .main-header-white {
+        font-size: 48px;
+    }
+    
+}
+
 .main-text {
     color: var(--text-color);
-    margin: 0 auto;
     font-size: 15px;
     font-weight: var(--light-font);
     line-height: 25px;
@@ -103,6 +144,14 @@ a:active {
     margin: 0 24px 33px 24px;
     padding: 5px;
     font-style: normal;
+}
+
+@media (min-width:768px) {
+    .main-text {
+        font-size: 18px;
+        text-align: left;
+        margin: 0 0 40px 0;
+    }
 }
 
 .img-box {
@@ -124,6 +173,12 @@ a:active {
 form {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    form {
+        flex-direction: row;
+    }
 }
 
 input {
@@ -151,4 +206,43 @@ input {
 
     font-weight: var(--bold-font);
     font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    input {
+        width: 427px;
+        height: 56px;
+        border-radius: 50px;
+        border-style: none;
+        margin-bottom: 15px;
+        cursor: pointer;
+        padding-left: 32px;
+        
+    
+    }
+    
+    .btn {
+        background-color: var(--primary-color);
+        width: 162px;
+        height: 46px;
+    
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.dots-wrapper {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+    width: 232px;
+    height: 104px;
+    margin: 40px;
+}
+
+.dot {
+    background-color: var(--primary-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }

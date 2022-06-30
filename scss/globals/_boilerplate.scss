@@ -1,0 +1,20 @@
+@use '../util'; //This is the namespace util. Can add 'as u' to only use u instead of util. ex. u.$font. Help avoid naming conflicts.
+
+*, 
+*::after, 
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: util.$font;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}

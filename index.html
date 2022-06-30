@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style1.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Pod Request Access Landing Page</title>
 </head>
+
 <body>
   <div class="container">
-    <header role="banner">
-      <div class="logo-box">
-        <img src="/assets/desktop/logo.svg" alt="logo">
-        <h1>pod</h1>
-      </div>
+    <header class="gird__header" role="banner">
+      <h1 class="logo-box">
+        <img src="./assets/desktop/logo.svg" alt="logo">
+      </h1>
     </header>
-    <main class="main-container" role="main">
-      <section class="context-box">
-        <h2 class="main-header">
+    <main class="grid__main" role="main">
+      <!-- <div class="img-wrapper">
+        <img src="./assets/tablet/image-host.jpg" alt="Man recording music">
+      </div> -->
+      <section class="content-box">
+        <h2 class="main-header main-header-green">
           PUBLISH YOUR PODCAST
         </h2>
-        <h2 class="main-header">
+        <h2 class="main-header main-header-white">
           EVERYWHERE.
         </h2>
     
@@ -30,26 +37,51 @@
           Apple Podcasts, Google Podcasts, Pocket Casts and more!
         </p>
 
-        <form action="submit">
-          <input type="email" name="email" id="email">
-          <label for="email"></label>
-          <button class="btn">Request access</button>
-        </form>
-
         <div class="img-box">
           <img src="./assets/desktop/spotify.svg" alt="Spotify">
           <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast">
           <img src="./assets/desktop/google-podcasts.svg" alt="Google podcast">
           <img src="./assets/desktop/pocket-casts.svg" alt="Pocket podcast">
         </div>
+
+        <form action="submit">
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <label for="email"></label>
+          <button class="btn">Request Access</button>
+        </form>
       </section>
     </main>
 
-    <div class="background-img"></div>
+    
 
-    <div class="dots-wrapper">
+    <!-- <div class="dots-wrapper">
         <div class="dot"></div>
-    </div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div> -->
   </div>
 
   <script src="./scripts/script.js"></script>
